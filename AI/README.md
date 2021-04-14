@@ -51,7 +51,7 @@ We’ll wrap up the post by looking at the results of applying our face mask det
 
 There is two-phase COVID-19 face mask detector as shown in Figure 2:
 
-![Figure 2](https://www.pyimagesearch.com/wp-content/uploads/2020/04/face_mask_detection_phases.png)
+![Figure 2](https://github.com/aisyafatihah/AI-Project/blob/main/AI/Cartoonify.jpg)
 Figure 2: Phases and individual steps for building a COVID-19 face mask detector with computer vision and deep learning 
 
 In order to train a custom face mask detector, we need to break our project into two distinct phases, each with its own respective sub-steps (as shown by Figure 1 above):
