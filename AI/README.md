@@ -1,21 +1,21 @@
-# FACE MASK DETECTION USING DEEP LEARNING 
+# MYERS-BRIGGS PERSONALITY PREDICTOR 
 
 ## A. PROJECT SUMMARY
 
-**Project Title:** Face Mask Detection using Deep Learning
+**Project Title:** Myers-Briggs Personality Predictor
 
 **Team Members:** 
-- [insert Member Name]
-- [insert Member Name]
-- [insert Member Name]
-- [insert Member Name]
+- Nur Aisya Fatihah binti Azhar
+- Nur Afiqah binti Halim
+- Nur Syahirah binti Izwan Wasandan
+- Afza Adawiyah binti Abdul Tahrim
 
 
 - [ ] **Objectives:**
 - Break out the project goal into more specific objectives
-- [insert]
-- [insert]
-- [insert]
+- To predict human's personality using Myers-Briggs type
+- To show more details about each type of person's personality
+- To suggest which career path is suitable for certain type of personality
 
 
 ##  B. ABSTRACT 
@@ -27,8 +27,8 @@ The best safety measure that can be taken is enforcing the people to wear a face
 As for now, you as a Data Scientist or Machine Learning Engineer or Practitioner are going to use AI technology to recognize people whether they are wearing face mask or not in the public or open space.
 
 
-![Coding](https://miro.medium.com/max/1400/1*fyfSOSKswsmV0n7Wdy6R4Q.jpeg)
-Figure 1 shows the AI output of detecting which user is not wearing a face mask or inappropriate face mask.
+![Coding](https://github.com/aisyafatihah/AI-Project/blob/main/AI/AI_pic.png)
+Figure 1 shows type of personality based on Myers-Briggs.
 
 
 ## C.  DATASET
