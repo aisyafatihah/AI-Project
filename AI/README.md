@@ -1,8 +1,8 @@
-# MYERS-BRIGGS PERSONALITY PREDICTOR 
+# COLOUR DETECTOR 
 
 ## A. PROJECT SUMMARY
 
-**Project Title:** Myers-Briggs Personality Predictor
+**Project Title:** Colour Detector
 
 **Team Members:** 
 - Nur Aisya Fatihah binti Azhar
@@ -13,78 +13,34 @@
 
 - [ ] **Objectives:**
 - Break out the project goal into more specific objectives
-- To predict human's personality using Myers-Briggs type
-- To show more details about each type of person's personality
-- To suggest which career path is suitable for certain type of personality
+- To detector various colour on certain objects
+- To show a correct name for the colour checked
+- To provide RGB values of each color
 
 
 ##  B. ABSTRACT 
 
-In late December 2019, a previous unidentified coronavirus, currently named as the 2019 novel coronavirus, emerged from Wuhan, China, and resulted in a formidable outbreak in many cities in China and expanded globally, including Thailand, Republic of Korea, Japan, United States, Philippines, Viet Nam, and our country (as of 2/6/2020 at least 25 countries). Covid-19 are Person-to-person transmission may occur through droplet or contact transmission and if there is a lack of stringent infection control or if no proper personal protective equipment available, it may jeopardize the first-line healthcare workers.
-
-The best safety measure that can be taken is enforcing the people to wear a face mask whenever they are outside to slow down the COVID-19 infection rate. Mask wearing significantly reduced the amounts of various airborne viruses coming from infected patients, measured using the breath-capturing "Gesundheit II machine" developed by Dr. Don Milton, a professor of applied environmental health and a senior author of the study published April 3 in the journal Nature Medicine. In short, masks can help prevent the spread of COVID-19 and that the more people wearing masks, the better.
-
-As for now, you as a Data Scientist or Machine Learning Engineer or Practitioner are going to use AI technology to recognize people whether they are wearing face mask or not in the public or open space.
+  Colour of an object depends on both the object and its environment. Objects can be said to have the colour of the light leaving their surfaces. There are a lot of colour existed in this world. Every shade of colour has different code and hex number. Even in simple picture, there are a lot of colours that might look similar but actually a different name. 
+  The colour has continuous spectrum and as for now, you as a Machine Learning Engineer are going to use AI technology to recognize the colour in a picture
 
 
-![Coding](https://github.com/aisyafatihah/AI-Project/blob/main/AI/AI_pic.png)
-Figure 1 shows type of personality based on Myers-Briggs.
+![Coding](https://github.com/aisyafatihah/AI-Project/blob/main/AI/figure1.png)
+Figure 1 shows colour spectrum.
 
 
 ## C.  DATASET
 
-In this project, we’ll discuss our two-phase COVID-19 face mask detector, detailing how our computer vision/deep learning pipeline will be implemented.
+In this project, we’ll discuss on how our computer vision pipeline will be implemented in order to detect the colour.
 
-From there, we’ll review the dataset we’ll be using to train our custom face mask detector.
+From there, we’ll review the dataset we’ll be using to train our custom colour detector.
 
-I’ll then show you how to implement a Python script to train a face mask detector on our dataset using Keras and TensorFlow.
+I’ll then show you how to implement a Python script to train a colour detector on our dataset using OpenCV and Pandas.
 
-We’ll use this Python script to train a face mask detector and review the results.
+The dataset we’ll be using here today was created by reader Mathew Brush.
 
-Given the trained COVID-19 face mask detector, we’ll proceed to implement two more additional Python scripts used to:
+This dataset consists of 865 of colour names.
 
-- Detect COVID-19 face masks in images
-- Detect face masks in real-time video streams
-
-We’ll wrap up the post by looking at the results of applying our face mask detector.
-
-
-There is two-phase COVID-19 face mask detector as shown in Figure 2:
-
-![Figure 2](https://github.com/aisyafatihah/AI-Project/blob/main/AI/Cartoonify.jpg)
-Figure 2: Phases and individual steps for building a COVID-19 face mask detector with computer vision and deep learning 
-
-In order to train a custom face mask detector, we need to break our project into two distinct phases, each with its own respective sub-steps (as shown by Figure 1 above):
-
-- Training: Here we’ll focus on loading our face mask detection dataset from disk, training a model (using Keras/TensorFlow) on this dataset, and then serializing the face mask detector to disk
-
-- Deployment: Once the face mask detector is trained, we can then move on to loading the mask detector, performing face detection, and then classifying each face as with_mask or without_mask
-
-We’ll review each of these phases and associated subsets in detail in the remainder of this tutorial, but in the meantime, let’s take a look at the dataset we’ll be using to train our COVID-19 face mask detector.
-
-
-Our COVID-19 face mask detection dataset as shown in Figure 3:
-
-![Figure 3](https://www.pyimagesearch.com/wp-content/uploads/2020/04/face_mask_detection_dataset.jpg)
-
-Figure 3: A face mask detection dataset consists of “with mask” and “without mask” images. 
-
-The dataset we’ll be using here today was created by PyImageSearch reader Prajna Bhandary.
-
-This dataset consists of 1,376 images belonging to two classes:
-
-- with_mask: 690 images
-- without_mask: 686 images
-
-Our goal is to train a custom deep learning model to detect whether a person is or is not wearing a mask.
-
-How was our face mask dataset created?
-Prajna, like me, has been feeling down and depressed about the state of the world — thousands of people are dying each day, and for many of us, there is very little (if anything) we can do.
-
-To help keep her spirits up, Prajna decided to distract herself by applying computer vision and deep learning to solve a real-world problem:
-
-- Best case scenario — she could use her project to help others
-- Worst case scenario — it gave her a much needed mental escape
+Our goal is to train machine to detect the colour in a picture.
 
 
 ## D.   PROJECT STRUCTURE
@@ -93,44 +49,30 @@ The following directory is our structure of our project:
 - $ tree --dirsfirst --filelimit 10
 - .
 - ├── dataset
-- │   ├── with_mask [690 entries]
-- │   └── without_mask [686 entries]
+- │   └── colors [865 entries]
 - ├── examples
-- │   ├── example_01.png
-- │   ├── example_02.png
-- │   └── example_03.png
-- ├── face_detector
-- │   ├── deploy.prototxt
-- │   └── res10_300x300_ssd_iter_140000.caffemodel
-- ├── detect_mask_image.py
-- ├── detect_mask_video.py
-- ├── mask_detector.model
-- ├── plot.png
-- └── train_mask_detector.py
-- 5 directories, 10 files
+- │   ├── almond
+- │   ├── american_rose
+- │   └── blush
+- ├── color_detection.py
+- ├── colorpic.jpg
+- └── Colors.csv
 
+An image exampleis provided so that you can test the colour detector.
 
-The dataset/ directory contains the data described in the “Our COVID-19 face mask detection dataset” section.
+We’ll be reviewing the Python scripts in this tutorial:
 
-Three image examples/ are provided so that you can test the static image face mask detector.
-
-We’ll be reviewing three Python scripts in this tutorial:
-
-- train_mask_detector.py: Accepts our input dataset and fine-tunes MobileNetV2 upon it to create our mask_detector.model. A training history plot.png containing accuracy/loss curves is also produced
-- detect_mask_image.py: Performs face mask detection in static images
-- detect_mask_video.py: Using your webcam, this script applies face mask detection to every frame in the stream
-
-In the next two sections, we will train our face mask detector.
+- colour_detection.py: Accept image from user and use pandas to read the dataset
 
 
 
-## E   TRAINING THE COVID-19 FACE MASK DETECTION
+## E   TRAINING THE COLOUR DETECTOR
 
-We are now ready to train our face mask detector using Keras, TensorFlow, and Deep Learning.
+We are now ready to train our colour detector using OpenCV and Pandas.
 
 From there, open up a terminal, and execute the following command:
 
-- $ python train_mask_detector.py --dataset dataset
+- python color_detection.py -i colorpic.jpg
 - [INFO] loading images...
 - [INFO] compiling model...
 - [INFO] training head...
@@ -184,23 +126,22 @@ Detecting COVID-19 face masks with OpenCV in real-time
 
 You can then launch the mask detector in real-time video streams using the following command:
 - $ python detect_mask_video.py
-- [INFO] loading face detector model...
-- INFO] loading face mask detector model...
-- [INFO] starting video stream...
+- [INFO] loading colour detector model...
+- [INFO] starting detecting...
 
-[![Figure5](https://img.youtube.com/vi/wYwW7gAYyxw/0.jpg)](https://www.youtube.com/watch?v=wYwW7gAYyxw "Figure5")
+![Figure5](https://github.com/aisyafatihah/AI-Project/blob/main/AI/colour_detect.JPG)
 
-Figure 5: Mask detector in real-time video streams
+Figure 5: Flow of Colour Detector in real-time 
 
-In Figure 5, you can see that our face mask detector is capable of running in real-time (and is correct in its predictions as well.
+In Figure 5, you can see that our colour detector is capable of running in real-time and is correct in its predictions as well.
 
 
 
 ## G.   PROJECT PRESENTATION 
 
-In this project, you learned how to create a COVID-19 face mask detector using OpenCV, Keras/TensorFlow, and Deep Learning.
+In this project, you learned how to create a Colour Detector using OpenCV and Pandas.
 
-To create our face mask detector, we trained a two-class model of people wearing masks and people not wearing masks.
+To create our colour detector, we trained a two-class model of people wearing masks and people not wearing masks.
 
 We fine-tuned MobileNetV2 on our mask/no mask dataset and obtained a classifier that is ~99% accurate.
 
