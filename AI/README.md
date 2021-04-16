@@ -40,7 +40,7 @@ The dataset we’ll be using here today was created by reader Mathew Brush.
 This dataset consists of 865 of colour names.
 
 ![Coding](https://github.com/aisyafatihah/AI-Project/blob/main/AI/dataset.JPG)
-Figure 2 shows colour datasets.
+Figure 2 shows some parts of colour datasets.
 
 Our goal is to train machine to detect the colour in a picture.
 
