@@ -39,6 +39,9 @@ The dataset we’ll be using here today was created by reader Mathew Brush.
 
 This dataset consists of 865 of colour names.
 
+![Coding](https://github.com/aisyafatihah/AI-Project/blob/main/AI/dataset.JPG)
+Figure 2 shows colour datasets.
+
 Our goal is to train machine to detect the colour in a picture.
 
 
@@ -79,7 +82,7 @@ From there, open up a terminal, and execute the following steps:
 
 ![Figure 4](https://github.com/aisyafatihah/AI-Project/blob/main/AI/PLotterColour.png)
 
-Figure 4: Testing colour 
+Figure 3: Testing colour 
 
 Given these results, we are hopeful that our model will generalize well to images outside our training and testing set.
 
@@ -96,9 +99,9 @@ You can then launch the colour detector using the following command and steps:
 
 ![Figure5](https://github.com/aisyafatihah/AI-Project/blob/main/AI/colour_detect.JPG)
 
-Figure 5: Flow of Colour Detector in real-time 
+Figure 4: Flow of Colour Detector in real-time 
 
-In Figure 5, you can see that our colour detector is capable of running in real-time and is correct in its predictions as well.
+In Figure 4, you can see that our colour detector is capable of running in real-time and is correct in its predictions as well.
 
 
 
