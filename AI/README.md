@@ -86,12 +86,12 @@ Given these results, we are hopeful that our model will generalize well to image
 
 ## F.  RESULT AND CONCLUSION
 
-Detecting COVID-19 face masks with OpenCV in real-time
+Detecting colour with OpenCV and Pandas in real-time
 
-You can then launch the mask detector in real-time video streams using the following command and steps:
+You can then launch the colour detector using the following command and steps:
 - python color_detection.py -i colorpic.jpg
 - [INFO] loading image...
-- [INFO] open the windows...
+- Open the windows...
 - Click on the colour desired
 
 ![Figure5](https://github.com/aisyafatihah/AI-Project/blob/main/AI/colour_detect.JPG)
