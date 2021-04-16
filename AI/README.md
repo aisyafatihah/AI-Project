@@ -11,7 +11,7 @@
 - Afza Adawiyah binti Abdul Tahrim
 
 
-- [ ] **Objectives:**
+**Objectives:**
 - To detector various colour on certain objects
 - To show a correct name for the colour checked
 - To provide RGB values of each color
