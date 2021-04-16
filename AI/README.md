@@ -12,7 +12,6 @@
 
 
 - [ ] **Objectives:**
-- Break out the project goal into more specific objectives
 - To detector various colour on certain objects
 - To show a correct name for the colour checked
 - To provide RGB values of each color
