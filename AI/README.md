@@ -45,8 +45,6 @@ Our goal is to train machine to detect the colour in a picture.
 ## D.   PROJECT STRUCTURE
 
 The following directory is our structure of our project:
-- $ tree --dirsfirst --filelimit 10
-- .
 - ├── dataset
 - │   └── colors [865 entries]
 - ├── examples
