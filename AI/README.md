@@ -20,7 +20,7 @@
 ##  B. ABSTRACT 
 
   Colour of an object depends on both the object and its environment. Objects can be said to have the colour of the light leaving their surfaces. There are a lot of colour existed in this world. Every shade of colour has different code and hex number. Even in simple picture, there are a lot of colours that might look similar but actually a different name. 
-  The colour has continuous spectrum and as for now, you as a Machine Learning Engineer are going to use AI technology to recognize the colour in a picture
+  The colour has continuous spectrum and as for now, we as a Machine Learning Engineer are going to use AI technology to recognize the colour in a picture
 
 
 ![Coding](https://github.com/aisyafatihah/AI-Project/blob/main/AI/figure1.png)
@@ -101,7 +101,7 @@ You can then launch the colour detector using the following command and steps:
 
 Figure 4: Flow of Colour Detector in real-time 
 
-In Figure 4, you can see that our colour detector is capable of running in real-time and is correct in its predictions as well.
+In Figure 4, we can see that our colour detector is capable of running in real-time and is correct in its predictions as well.
 
 
 
@@ -113,6 +113,7 @@ We also  learned about how we can extract color RGB values and the color name of
 
 Other than that, we learned how to handle events like double-clicking on the window and see how to read CSV files with pandas and perform operations on data.
 
+Below, I include the demonstration of Colour Detector
 
 [![demo](https://img.youtube.com/vi/JxmmOktlN6U/0.jpg)](https://www.youtube.com/watch?v=JxmmOktlN6U "demo")
 
