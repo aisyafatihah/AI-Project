@@ -1,4 +1,5 @@
 # COLOUR DETECTOR 
+Project Closing: [Project Closing] (https://github.com/aisyafatihah/AI-Project/blob/97a25d21d8862cf39afc9b6946c425316b60fd62/AI/Documentation/E.md “Github”)
 
 ## A. PROJECT SUMMARY
 
